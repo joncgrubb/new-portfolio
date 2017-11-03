@@ -3,9 +3,9 @@
     <grubbHeader />
       <div class="container">
         <div class="card-navs">
-          <a href="#"><h1>About</h1></a>
-          <a href="#"><h1>Portfolio</h1></a>
-          <a href="#"><h1>Blog</h1></a>
+          <button class="btn btn-default"><h1>About</h1></button>
+          <button class="btn btn-default"><h1>Portfolio</h1></button>
+          <button class="btn btn-default"><h1>Blog</h1></button>
         </div>
 
         <div id="main-panel" class="panel panel-default">
@@ -16,9 +16,9 @@
           </div>
         </div>
 
-        <!-- <about />
+        <about />
         <portfolio />
-        <blog /> -->
+        <blog />
       </div>
     <grubbFooter />
   </div>
@@ -61,18 +61,16 @@
   }
 
   .container h1 {
-    display: inline-block;
     text-align: center;
-    margin-top: 100px;
-    padding: 5px;
-    width: 25%;
-    min-width: 170px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-shadow: .5px .5px 3px #ccc;
-    background-color: white;
     font-size: 25px;
     color: #363636;
+    margin: 0;
+  }
+
+  .container .btn {
+    margin-top: 100px;
+    margin-bottom:10px;
+    box-shadow: .5px .5px 3px #ccc;
   }
 
   .container p {
