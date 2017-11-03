@@ -86,28 +86,28 @@
   }
 
   @-webkit-keyframes bars {
-    0%   { width: 5%; }
-    50% { width: 5%; }
+    0%   { width: 8%; }
+    50% { width: 8%; }
     80% { width: 0px;}
-    100%{ width:5%;}
+    100%{ width:8%;}
   }
   @-moz-keyframes bars {
-    0%   { width: 5%; }
-    50% { width: 5%; }
+    0%   { width: 8%; }
+    50% { width: 8%; }
     80% { width: 0px;}
-    100%{ width:5%;}
+    100%{ width:8%;}
   }
   @-o-keyframes bars {
-    0%   { width: 5%; }
-    50% { width: 5%; }
+    0%   { width: 8%; }
+    50% { width: 8%; }
     80% { width: 0px;}
-    100%{ width:5%;}
+    100%{ width:8%;}
   }
   @keyframes bars {
-    0%   { width: 5%; }
-    50% { width: 5%; }
+    0%   { width: 8%; }
+    50% { width: 8%; }
     80% { width: 0px;}
-    100%{ width:5%;}
+    100%{ width:8%;}
 }
 
   /*@-webkit-keyframes hr-anim {

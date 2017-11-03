@@ -10,9 +10,11 @@
 
         <div id="main-panel" class="panel panel-default">
           <div class="panel-body">
-            <about v-if="about == true"/>
-            <portfolio v-if="portfolio == true" />
-            <blog v-if="blog == true" />
+            <transition name="component-fade" mode="out-in">
+              <about v-if="about == true"/>
+              <portfolio v-if="portfolio == true" />
+              <blog v-if="blog == true" />
+            </transition>
           </div>
         </div>
 
@@ -100,4 +102,13 @@
   #main-panel {
     box-shadow: .5px .5px 3px #ccc;
   }
+
+  .component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity .3s ease;
+  }
+  .component-fade-enter, .component-fade-leave-to
+  /* .component-fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+
 </style>
