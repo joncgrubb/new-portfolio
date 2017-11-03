@@ -79,7 +79,7 @@
 
   .container h1 {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
     color: #363636;
     margin: 0;
   }
