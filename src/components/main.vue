@@ -77,13 +77,6 @@
   outline: none;
   }
 
-  /*.card-navs {
-    -webkit-user-select: none;        
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }*/
-
   .container h1 {
     text-align: center;
     font-size: 25px;
