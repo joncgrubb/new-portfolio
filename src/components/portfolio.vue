@@ -3,8 +3,31 @@
 
     <p class="text-center"><b>A few of the awesome apps I've built...</b></p>
     <hr>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a arcu imperdiet, vehicula nisi non, iaculis orci. Sed tincidunt ligula quis erat vestibulum imperdiet. Vestibulum viverra id nisl non mollis. Mauris sagittis lobortis blandit. Aenean eget scelerisque felis, at elementum augue. In venenatis nisi et tortor pulvinar, vitae lacinia arcu dapibus. Proin pretium dolor nulla, laoreet dapibus purus gravida sed. Donec fringilla sit amet elit ut consequat. Suspendisse tempor accumsan tellus vitae vulputate. Ut mollis hendrerit ante, ac scelerisque eros lobortis ut. Aenean euismod id nulla et mollis. In faucibus nisi massa, sit amet viverra sapien vestibulum nec.</p>
-    <p>Suspendisse potenti. Etiam finibus, est ac vehicula aliquam, lacus ligula sagittis ante, porta finibus arcu tortor non velit. Donec rhoncus at lorem eget fringilla. Vivamus volutpat tortor sed odio fringilla, vitae pulvinar tortor malesuada. Vestibulum felis turpis, dignissim eu aliquet non, lacinia sit amet lorem. Nam aliquam nisl sed metus congue dictum. Vestibulum justo libero, lacinia id fringilla at, convallis sit amet tortor. Donec et volutpat neque.</p>
+    <div class="row">
+      <div class="col-xs-4 text-center">
+        <a href="https://grubb-ice-cream.herokuapp.com/" target="_blank"><button class="btn btn-default"><i class="fa fa-shopping-bag" aria-hidden="true"></i></button></a><p>Ice Cream Shop</p>
+      </div>
+      <div class="col-xs-4 text-center">
+        <a href="https://grubb-tic-tac-toe.herokuapp.com/" target="_blank"><button class="btn btn-default"><i class="fa fa-hashtag" aria-hidden="true"></i></button></a><p>Tic Tac Toe</p>
+      </div>
+      <div class="col-xs-4 text-center">
+        <a href="https://grubb-weather-doom.herokuapp.com/" target="_blank"><button class="btn btn-default"><i class="fa fa-sun-o" aria-hidden="true"></i></button></a><p>Weather Doom</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-4 text-center">
+        <a href="https://grubb-spacedock.herokuapp.com/" target="_blank"><button class="btn btn-default"><i class="fa fa-space-shuttle" aria-hidden="true"></i></button></a><p>Spacedock Orderform</p>
+      </div>
+      <div class="col-xs-4 text-center">
+        <a href="https://grubb-connect-4.herokuapp.com/" target="_blank"><button class="btn btn-default"><i class="fa fa-gamepad" aria-hidden="true"></i></button></a><p>Connect 4</p>
+      </div>
+      <div class="col-xs-4 text-center">
+        <a href="https://grubb-sorting-hat.herokuapp.com/" target="_blank"><button class="btn btn-default"><i class="fa fa-address-book" aria-hidden="true"></i></button></a><p>Sorting Hat</p>
+      </div>
+    </div>
+
+    <div class="bottom"></div>
 
   </div>
 </template>
@@ -26,8 +49,27 @@
     width: 50%;
   }
 
-  .portfolio p {
-    padding: 3%;
+  .row {
+    margin-top: 50px;
+  }
+
+  .btn {
+    margin: 3%;
+  }
+
+  .btn i {
+    font-size: 50px;
+    padding: 5px;
+  }
+
+  .bottom {
+    margin-bottom: 50px;
+  }
+
+  .fa-hashtag {
+    -ms-transform: skew(13deg);
+    -webkit-transform: skew(13deg);
+    transform: skew(13deg);
   }
 
 </style>
