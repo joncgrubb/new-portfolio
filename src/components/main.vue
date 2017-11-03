@@ -3,22 +3,22 @@
     <grubbHeader />
       <div class="container">
         <div class="card-navs">
-          <button class="btn btn-default"><h1>About</h1></button>
-          <button class="btn btn-default"><h1>Portfolio</h1></button>
-          <button class="btn btn-default"><h1>Blog</h1></button>
+          <button class="btn btn-default" v-bind:class="{ active: about }" v-on:click="getAbout"><h1>About</h1></button>
+          <button class="btn btn-default" v-bind:class="{ active: portfolio }" v-on:click="getPortfolio"><h1>Portfolio</h1></button>
+          <button class="btn btn-default" v-bind:class="{ active: blog }" v-on:click="getBlog"><h1>Blog</h1></button>
         </div>
 
         <div id="main-panel" class="panel panel-default">
           <div class="panel-body">
-            <p><b>{{ cardInfo }}</b></p>
-            <hr>
-            {{ cardContent }}
+            <about v-if="about == true"/>
+            <portfolio v-if="portfolio == true" />
+            <blog v-if="blog == true" />
           </div>
         </div>
 
-        <about />
+        <!-- <about />
         <portfolio />
-        <blog />
+        <blog /> -->
       </div>
     <grubbFooter />
   </div>
@@ -42,23 +42,47 @@
     },
     data () {
       return {
-        msg: 'Generic Placeholder'
+        about: true,
+        portfolio: false,
+        blog: false
+      }
+    },
+    methods: {
+      getAbout: function() {
+        this. portfolio = false;
+        this.blog = false;
+        this.about = true;
+      },
+      getPortfolio: function() {
+        this.blog = false;
+        this.about = false;
+        this.portfolio = true;
+      },
+      getBlog: function() {
+        this.about = false;
+        this.portfolio = false;
+        this.blog = true;
       }
     }
   }
 </script>
 
 <style scoped>
+  
   hr {
     width: 50%;
   }
 
-  .card-navs {
-    -webkit-user-select: none; /* Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+/Edge */
-    user-select: none; /* Standard */
+  .btn:focus {
+  outline: none;
   }
+
+  /*.card-navs {
+    -webkit-user-select: none;        
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }*/
 
   .container h1 {
     text-align: center;
@@ -73,9 +97,6 @@
     box-shadow: .5px .5px 3px #ccc;
   }
 
-  .container p {
-    padding: 3%;
-  }
   #main-panel {
     box-shadow: .5px .5px 3px #ccc;
   }
