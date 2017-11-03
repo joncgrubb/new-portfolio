@@ -22,6 +22,7 @@
 </script>
 
 <style scoped>
+  
   hr {
     width: 50%;
   }
@@ -36,23 +37,8 @@
     border: 1px solid #777;
   }
 
-  /*.about-me h1 {
-    margin-top: 100px;
-    padding: 5px;
-    width: 25%;
-    min-width: 170px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-shadow: .5px .5px 3px #ccc;
-    background-color: white;
-    font-size: 25px;
-  }*/
-
   .about-me p {
     padding: 3%;
   }
 
-  /*#about-panel {
-    box-shadow: .5px .5px 3px #ccc;
-  }*/
 </style>
