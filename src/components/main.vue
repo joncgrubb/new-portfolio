@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+    
     <grubbHeader />
       <div class="container">
         <div class="card-navs">
@@ -18,9 +19,6 @@
           </div>
         </div>
 
-        <!-- <about />
-        <portfolio />
-        <blog /> -->
       </div>
     <grubbFooter />
   </div>
