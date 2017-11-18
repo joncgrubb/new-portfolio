@@ -12,11 +12,6 @@
 <script>
   export default {
     name: 'blog',
-    data () {
-      return {
-        msg: 'Welcome to Your Vue.js App'
-      }
-    }
   }
 </script>
 

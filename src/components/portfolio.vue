@@ -35,11 +35,6 @@
 <script>
   export default {
     name: 'portfolio',
-    data () {
-      return {
-        msg: 'Welcome to Your Vue.js App'
-      }
-    }
   }
 </script>
 
