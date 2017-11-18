@@ -8,7 +8,7 @@
     <div class="container-fluid">  
       <div class="row">
         <div class="col-xs-4">
-          <i class="fa fa-file-code-o blurb-icon" aria-hidden="true"></i>
+          <i class="fa fa-code blurb-icon" aria-hidden="true"></i>
           <p>Short and sweet info about coding / bootcamp</p>
         </div>
         <div class="col-xs-4">

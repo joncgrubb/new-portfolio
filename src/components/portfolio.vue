@@ -1,7 +1,7 @@
 <template>
   <div class="portfolio">
 
-    <p class="text-center"><b>A few of the awesome apps I've built...</b></p>
+    <p class="text-center portfolio-title"><b>A few of the awesome apps I've built...</b></p>
     <hr>
     <div class="row">
       <div class="col-xs-4 text-center">
@@ -42,6 +42,10 @@
   
   hr {
     width: 50%;
+  }
+
+  .portfolio-title {
+    padding: 3%;
   }
 
   .row {
