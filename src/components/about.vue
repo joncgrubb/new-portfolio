@@ -4,13 +4,13 @@
     <p class="text-center"><b>Web Developer. Philomath. Automotive Enthusiast. Awesome Guy.</b></p>
     <hr>
     <img class="profile-pic" src="../assets/images/jon.jpg">
-    <p class="text-center">I have an insatiable desire to learn, modify, and improve everything around me. I've loved technology from a young age and have been in the automotive industry for most of my professional career. From coding and writing scripts for gaming addons and bots, to assisting with development of custom android ROMS with the folks over on the XDA forums, to hiring, training and leading employees in a brand new market for a national top 10 automotive company, my need to learn, improve, and help others do the same has only gotten stronger.</p>
+    <p class="text-center">I have an insatiable desire to learn, modify, and improve everything around me. I've loved technology from a young age and have been in the automotive industry for most of my professional career. From coding and writing scripts for gaming addons and bots, to assisting with development of custom android ROMS with the folks over on the xda forums, to hiring, training and leading employees in a brand new market for a national top 10 automotive company, my need to learn, improve, and help others do the same has only gotten stronger.</p>
     <div class="container-fluid">  
       <div class="row">
         <div class="col-sm-4">
           <i class="fa fa-code blurb-icon" aria-hidden="true"></i>
           <p class="blurb-title"><b>Developer</b></p>
-          <p class="text-center">The Awesome Inc web development bootcamp was a fantastic opportunity for me to break out of my comfort zone in the automotive industry to pursue my dream of becoming an asset in the ever changing technology industry.</p>
+          <p class="text-center">The Awesome Inc web development bootcamp has been a fantastic opportunity for me to break out of my comfort zone in the automotive industry to pursue my dream of becoming an asset in the ever changing technology industry.</p>
         </div>
         <div class="col-sm-4">
           <i class="fa fa-wrench blurb-icon" aria-hidden="true"></i>
@@ -20,7 +20,7 @@
         <div class="col-sm-4">
           <i class="fa fa-mobile blurb-icon" aria-hidden="true"></i>
           <p class="blurb-title"><b>Philomath</b></p>
-          <p class="text-center"></p>
+          <p class="text-center">I'm a lifelong learner. Everything I become interested in becomes a hobby to me in some form or fashion. Mobile phones, cooking, home automation... I never turn down an opportunity to research something new, especially if it means the need for buying new tools.</p>
         </div>
       </div>
     </div>
