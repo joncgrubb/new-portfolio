@@ -6,7 +6,7 @@
     <ul>
 
       <li class="post-list">
-        <p class="post-date">November 5, 2017</p>
+        <p class="post-date">November 11, 2017</p>
         <p class="post-title"><b>Enabling BrowserSync in Your Laravel Project</b></p>
         <p class="post-blurb">If you're like me, clicking the refresh page button in your browser for the 200th time while working on a local project eventually gets to be too much. After searching a variety of different combinations of "live reload laravel", "laravel browsersync" and the like, I was finally able to piece...</p>
         <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal" v-on:click="getPost7">Read More</button>
@@ -70,6 +70,12 @@
             
           </div> -->
           <postAboutMe v-if="post1 == true"/>
+          <postStartBootcamp v-if="post2 == true"/>
+          <postFirstWeek v-if="post3 == true"/>
+          <postHerokuApp v-if="post4 == true"/>
+          <postBabel v-if="post5 == true"/>
+          <postPhpAndHeroku v-if="post6 == true"/>
+          <postBrowserSync v-if="post7 == true"/>
 
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -84,11 +90,23 @@
 
 <script>
   import postAboutMe from './posts/2017-09-18-about-me.vue';
+  import postStartBootcamp from './posts/2017-09-23-Start-of-Bootcamp.vue';
+  import postFirstWeek from './posts/2017-09-24-First-Week-Complete.vue';
+  import postHerokuApp from './posts/2017-10-02-Using-Heroku-to-Host-Your-Apps.vue';
+  import postBabel from './posts/2017-10-10-Babel.vue';
+  import postPhpAndHeroku from './posts/2017-10-25-PHP-and-Heroku.vue';
+  import postBrowserSync from './posts/2017-11-01-BrowserSync-With-Laravel.vue';
 
   export default {
     name: 'blog',
     components: {
-      'postAboutMe': postAboutMe
+      'postAboutMe': postAboutMe,
+      'postStartBootcamp': postStartBootcamp,
+      'postFirstWeek': postFirstWeek,
+      'postHerokuApp': postHerokuApp,
+      'postBabel': postBabel,
+      'postPhpAndHeroku': postPhpAndHeroku,
+      'postBrowserSync': postBrowserSync
     },
     data () {
       return {
@@ -175,10 +193,6 @@
     width: 50%;
   }
 
-  pre {
-    width: 50%;
-  }
-
   .btn {
     margin-bottom: 20px;
   }
@@ -190,7 +204,7 @@
 
   .post-list {
     list-style-type: none;
-    width: 60%;
+    width: 75%;
     margin: auto;
   }
 
@@ -204,8 +218,8 @@
     font-size: 20px;
   }
 
-  .post-blurb {
-
+  .modal-content {
+    padding: 5%;
   }
 
   body .modal {

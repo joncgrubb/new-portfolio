@@ -20,5 +20,7 @@
 </script>
 
 <style scoped>
-  
+  .date {
+    color: #777;
+  }
 </style>
