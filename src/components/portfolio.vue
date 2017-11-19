@@ -46,6 +46,7 @@
 
   .portfolio-title {
     padding: 3%;
+    font-size: 20px;
   }
 
   .row {

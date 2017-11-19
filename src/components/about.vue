@@ -1,7 +1,7 @@
 <template>
   <div class="about-me">
 
-    <p class="text-center"><b>Web Developer. Philomath. Automotive Enthusiast. Awesome Guy.</b></p>
+    <p class="text-center about-title"><b>Web Developer. Philomath. Automotive Enthusiast. Awesome Guy.</b></p>
     <hr>
     <img class="profile-pic" src="../assets/images/jon.jpg">
     <p class="text-center">I have an insatiable desire to learn, modify, and improve everything around me. I've loved technology from a young age and have been in the automotive industry for most of my professional career. From coding and writing scripts for gaming addons and bots, to assisting with development of custom android ROMS with the folks over on the xda forums, to hiring, training and leading employees in a brand new market for a national top 10 automotive company, my need to learn, improve, and help others do the same has only gotten stronger.</p>
@@ -40,6 +40,10 @@
     width: 50%;
   }
 
+  .about-title {
+    font-size: 20px;
+  }
+
   .profile-pic {
     height: 25%;
     width: 25%;
@@ -48,6 +52,7 @@
     display: block;
     margin: auto;
     margin-bottom: 20px;
+    margin-top: 20px;
     border: 1px solid #777;
   }
 
