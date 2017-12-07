@@ -5,7 +5,7 @@
     <hr>
     <div class="row">
       <div class="col-xs-4 text-center">
-        <a href="https://grubb-ice-cream.herokuapp.com/" target="_blank"><button class="btn btn-default hvr-radial-out"><i class="fa fa-shopping-bag" aria-hidden="true"></i></button></a><p>Ice Cream Shop</p>
+        <a href="https://www.link-sling.com/" target="_blank"><button class="btn btn-default hvr-radial-out"><i class="fa fa-commenting" aria-hidden="true"></i></button></a><p>Link-Sling</p>
       </div>
       <div class="col-xs-4 text-center">
         <a href="https://grubb-tic-tac-toe.herokuapp.com/" target="_blank"><button class="btn btn-default hvr-radial-out"><i class="fa fa-hashtag" aria-hidden="true"></i></button></a><p>Tic Tac Toe</p>
@@ -17,7 +17,7 @@
 
     <div class="row">
       <div class="col-xs-4 text-center">
-        <a href="https://grubb-spacedock.herokuapp.com/" target="_blank"><button class="btn btn-default hvr-radial-out"><i class="fa fa-space-shuttle" aria-hidden="true"></i></button></a><p>Spacedock Orderform</p>
+        <a href="https://grubb-ice-cream.herokuapp.com/" target="_blank"><button class="btn btn-default hvr-radial-out"><i class="fa fa-shopping-bag" aria-hidden="true"></i></button></a><p>Ice Cream Shop</p>
       </div>
       <div class="col-xs-4 text-center">
         <a href="https://grubb-connect-4.herokuapp.com/" target="_blank"><button class="btn btn-default hvr-radial-out"><i class="fa fa-gamepad" aria-hidden="true"></i></button></a><p>Connect 4</p>
@@ -70,6 +70,15 @@
     -ms-transform: skew(13deg);
     -webkit-transform: skew(13deg);
     transform: skew(13deg);
+  }
+
+  .fa-commenting {
+    -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
   }
 
   .hvr-radial-out {
