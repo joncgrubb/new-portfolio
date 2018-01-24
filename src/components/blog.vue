@@ -6,6 +6,13 @@
     <ul>
 
       <li class="post-list">
+        <p class="post-date">January 20, 2018</p>
+        <p class="post-title"><b>HTTP Tunneling with ngrok</b></p>
+        <p class="post-blurb">When building applications that utilize the Twilio Voice or SMS API, you will need to handle incoming messages and calls as well as be able to respond to them. In the development environment running on localhost, this poses a few challenges for us. While testing these features we will need the Twilio service...</p>
+        <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal" v-on:click="getPost8">Read More</button>
+      </li>
+
+      <li class="post-list">
         <p class="post-date">November 11, 2017</p>
         <p class="post-title"><b>Enabling BrowserSync in Your Laravel Project</b></p>
         <p class="post-blurb">If you're like me, clicking the refresh page button in your browser for the 200th time while working on a local project eventually gets to be too much. After searching a variety of different combinations of "live reload laravel", "laravel browsersync" and the like, I was finally able to piece...</p>
@@ -76,6 +83,7 @@
           <postBabel v-if="post5 == true"/>
           <postPhpAndHeroku v-if="post6 == true"/>
           <postBrowserSync v-if="post7 == true"/>
+          <postNgrok v-if="post8 == true"/>
 
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -96,6 +104,7 @@
   import postBabel from './posts/2017-10-10-Babel.vue';
   import postPhpAndHeroku from './posts/2017-10-25-PHP-and-Heroku.vue';
   import postBrowserSync from './posts/2017-11-01-BrowserSync-With-Laravel.vue';
+  import postNgrok from './posts/2018-01-20-HTTP-Tunneling-with-ngrok.vue';
 
   export default {
     name: 'blog',
@@ -106,7 +115,8 @@
       'postHerokuApp': postHerokuApp,
       'postBabel': postBabel,
       'postPhpAndHeroku': postPhpAndHeroku,
-      'postBrowserSync': postBrowserSync
+      'postBrowserSync': postBrowserSync,
+      'postNgrok': postNgrok
     },
     data () {
       return {
@@ -116,7 +126,8 @@
         post4: false,
         post5: false,
         post6: false,
-        post7: false
+        post7: false,
+        post8: false
       }
     },
     methods: {
@@ -127,6 +138,7 @@
         this.post5 = false;
         this.post6 = false;
         this.post7 = false;
+        this.post8 = false;
         this.post1 = true;
       },
       getPost2: function() {
@@ -136,6 +148,7 @@
         this.post5 = false;
         this.post6 = false;
         this.post7 = false;
+        this.post8 = false;
         this.post2 = true;
       },
       getPost3: function() {
@@ -145,6 +158,7 @@
         this.post5 = false;
         this.post6 = false;
         this.post7 = false;
+        this.post8 = false;
         this.post3 = true;
       },
       getPost4: function() {
@@ -154,6 +168,7 @@
         this.post5 = false;
         this.post6 = false;
         this.post7 = false;
+        this.post8 = false;
         this.post4 = true;
       },
       getPost5: function() {
@@ -163,6 +178,7 @@
         this.post4 = false;
         this.post6 = false;
         this.post7 = false;
+        this.post8 = false;
         this.post5 = true;
       },
       getPost6: function() {
@@ -172,6 +188,7 @@
         this.post4 = false;
         this.post5 = false;
         this.post7 = false;
+        this.post8 = false;
         this.post6 = true;
       },
       getPost7: function() {
@@ -181,7 +198,18 @@
         this.post4 = false;
         this.post5 = false;
         this.post6 = false;
+        this.post8 = false;
         this.post7 = true;
+      },
+      getPost8: function() {
+        this.post1 = false;
+        this.post2 = false;
+        this.post3 = false;
+        this.post4 = false;
+        this.post5 = false;
+        this.post6 = false;
+        this.post7 = false;
+        this.post8 = true;
       }
     }
   }
